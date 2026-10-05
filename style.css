@@ -181,6 +181,15 @@ h1, h2, h3, p { margin-top: 0; }
 .contact-detail > span { color: rgb(255 255 255 / 58%); font-size: 8px; font-weight: 700; letter-spacing: .17em; }
 .contact-detail a { color: var(--white); font-family: var(--serif); font-size: 18px; text-decoration-color: rgb(255 255 255 / 43%); text-underline-offset: 7px; }
 .contact-detail a span { margin-left: 8px; color: #e6b754; font-family: var(--sans); font-size: 13px; }
+.image-credits { padding: 22px 0 24px; border-top: 1px solid rgb(255 255 255 / 20%); }
+.image-credits-heading { display: flex; align-items: baseline; gap: 14px; }
+.image-credits-heading .eyebrow { margin: 0; color: #ddb66f; }
+.image-credits-heading h3 { margin: 0; font-family: var(--serif); font-size: 19px; font-weight: 400; }
+.image-credits-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px 30px; margin: 18px 0 0; padding: 0; list-style: none; }
+.image-credits-list li { display: flex; flex-wrap: wrap; gap: 4px 12px; color: rgb(255 255 255 / 62%); font-size: 9px; line-height: 1.6; }
+.image-credits-list li > span:first-child { min-width: 145px; color: rgb(255 255 255 / 86%); font-weight: 600; }
+.image-credits a { color: rgb(255 255 255 / 82%); text-decoration-color: rgb(255 255 255 / 35%); text-underline-offset: 2px; }
+.image-rights-note { margin: 17px 0 0; color: rgb(255 255 255 / 58%); font-family: var(--serif); font-size: 12px; }
 .footer-bottom { display: flex; min-height: 51px; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid rgb(255 255 255 / 20%); color: rgb(255 255 255 / 52%); font-size: 8px; font-weight: 600; letter-spacing: .1em; }
 .footer-back { color: var(--white); text-decoration: none; }
 .footer-back span { margin-left: 6px; color: #e6b754; font-size: 13px; }
@@ -279,6 +288,9 @@ h1, h2, h3, p { margin-top: 0; }
   .contact-main { align-items: flex-start; flex-direction: column; gap: 35px; padding: 47px 0 53px; }
   .contact-main h2 { font-size: 54px; }
   .contact-detail a { font-size: 17px; }
+  .image-credits-list { grid-template-columns: 1fr; gap: 11px; }
+  .image-credits-list li > span:first-child { min-width: 0; }
+  .image-rights-note { font-size: 11px; }
   .footer-bottom { flex-wrap: wrap; gap: 9px 15px; padding: 13px 0; font-size: 7px; }
 }
 @media (max-width: 370px) {
